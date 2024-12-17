@@ -1,25 +1,11 @@
-
-export default App
-
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-//import './index.css'
-
-function Myname(props){
+import Search from "./component/searchbar"
+import Chatlist from "./component/chat"
+function App(){
   return(
-    <div style={{backgroundColor:"skyblue",padding:"10px",margin:"10px"}}>
-      <h1>{props.myname}</h1>
+    <div>
+      <Search></Search>
+      <Chatlist></Chatlist>
     </div>
   )
 }
-var array=["Hari","Poo","Vedhan","Vino"]
-createRoot(document.getElementById("root")).render(
-  //<Myname myname="Ranjith"/>
-  <div>
-    {
-     array.map(function(item){
-     return(<Myname myname={item}></Myname>)
-     })
-    }
-  </div>
-)
+export default App;
