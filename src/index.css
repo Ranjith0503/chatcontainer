@@ -79,7 +79,8 @@ outline:none;
     height: auto; /* Adjust height */
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+   {
   .profile__img {
     height: 35px;  /* Smaller image on very small screens */
     width:40px;   /* Ensure width matches */
@@ -88,7 +89,10 @@ outline:none;
   .profile{
     margin-left:5%;
     margin-right:5%;
+    width:430px
   }
+.searchbar{
+width:430px
 }
 
 
